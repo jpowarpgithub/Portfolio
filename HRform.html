@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HR Onboarding Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>HR Onboarding Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" class="form-control" id="employeeId" name="employeeId" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeEmail">Employee Email:</label>
+        <input type="email" class="form-control" id="employeeEmail" name="employeeEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeFirstName">Employee First Name:</label>
+        <input type="text" class="form-control" id="employeeFirstName" name="employeeFirstName" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeLastName">Employee Last Name:</label>
+        <input type="text" class="form-control" id="employeeLastName" name="employeeLastName" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeDOB">Employee Date of Birth:</label>
+        <input type="date" class="form-control" id="employeeDOB" name="employeeDOB" required>
+      </div>
+      <div class="form-group">
+        <label for="employeeDesignation">Employee Designation:</label>
+        <input type="text" class="form-control" id="employeeDesignation" name="employeeDesignation" required>
+      </div>
+      <div class="form-group">
+        <label for="employeePhoneNumber">Employee Phone Number:</label>
+        <input type="tel" class="form-control" id="employeePhoneNumber" name="employeePhoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Select Gender:</label>
+        <select class="form-control" id="gender" name="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="acceptTerms" name="acceptTerms" required>
+        <label class="form-check-label" for="acceptTerms">I accept the Terms and Privacy Policy.</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
