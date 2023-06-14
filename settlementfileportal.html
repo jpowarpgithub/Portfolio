@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .btn-submit {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="downloadForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" class="form-control" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Business Email ID:</label>
+        <input type="email" id="email" class="form-control" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="workId">Work ID:</label>
+        <input type="text" id="workId" class="form-control" name="workId" required>
+      </div>
+      <button type="submit" class="btn btn-submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('downloadForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form submission
+
+      // Get form data
+      var formData = new FormData(this);
+
+      // Get the file link from the form data
+      var fileLink = formData.get('workId');
+
+      // Create a temporary anchor element
+      var link = document.createElement('a');
+      link.href = C:\Users\prithviraj\OneDrive\Documents\UiPath;
+      link.download = 'Transaction as at 13 May 2022';
+
+      // Programmatically trigger a click event on the anchor element
+      link.click();
+
+      // Clean up the anchor element
+      link.remove();
+    });
+	 </script>
+	
+	<button id="downloadButton">Download File</button>
+
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+      var fileURL = 'C:\Users\prithviraj\OneDrive\Documents\UiPath'; // Replace with the actual file URL
+
+      var link = document.createElement('a');
+      link.href = fileURL;
+      link.download = 'Data1.txt'; // Replace with the desired file name and extension
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+ 
+</body>
+</html>
