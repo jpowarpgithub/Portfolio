@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+
 
 Template Name: TechCraze
-Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+Template URL: https://jpowarpgithub.github.io/Portfolio/index.html
 Author: TechCraze
 License: https://bootstrapmade.com/license/
